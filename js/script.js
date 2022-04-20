@@ -353,3 +353,5 @@ export default class NailsClass{
         })
     }
 }
+
+const app = new NailsClass();
