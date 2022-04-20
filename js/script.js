@@ -1,4 +1,4 @@
-export default class NailsClass{
+class NailsClass{
     constructor(){
         if (document.querySelector('.main-app-page')){
             this.init()
