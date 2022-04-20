@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #E5E5E5;
+}
+
+.app-display{
+    max-width: 100vw;
+    min-height: 100vh;
+    margin: auto;
+    background-color: #FFF4F8;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+}
+header{
+    background-color: #fff;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.header-hat{
+    width: 100%;
+}
+header p{
+    width: 65%;
+}
+header svg{
+    cursor: pointer;
+}
+.header-hidden-block{
+    visibility: hidden;
+    opacity: 0;
+    margin-top: -55px;
+    padding: 15px;
+}
+.visible-block{
+    margin: 0;
+}
+header p{
+    margin: 20px 30px;
+}
+.header-hidden-block ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+}
+.header-hidden-block li{
+    margin: 0 15px;
+    width: 75px;
+    height: 20px;
+    background-color: #FFF4F8;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.5s;
+}
+.header-hidden-block li:first-child{
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.header-hidden-block li:last-child{
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.header-hidden-block li:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header-hidden-block span{
+    color: #000;
+    font-size: 14px;
+    cursor: pointer;
+    vertical-align: super;
+}
+.header-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+.add-new-client{
+    width: 100%;
+    bottom: 0;
+    background-color: #FFF4F8;
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.input-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+input{
+    max-width: 150px;
+    height: 30px;
+    margin: 15px;
+    padding: 5px;
+    border: none;
+    font-size: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+textarea{
+    border: none;
+    margin-top: 15px;
+    font-family: 'Open Sans', sans-serif;
+    resize: none;
+    width: 280px;
+    font-size: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.client-checkbox{
+    margin-top: 30px;
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+    font-size: 16px;
+    background-color: #fff;
+    transition: all 0.5s;
+}
+.client-checkbox-checked{
+    background-color: #000;
+    color: #fff;
+    transition: all 0.5s;
+}
+.app-user-display{
+    padding: 0 20px 60px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.client-card{
+    background-color: #fff;
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    order: 5;
+}
+.client-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.client-comment{
+    width: 100%;
+    min-height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s;
+    margin-top: -115px;
+    visibility: hidden;
+    opacity: 0;
+}
+.client-card-visible{
+    margin-top: 0;
+}
+.client-comment p{
+    height: 70px;
+    padding: 10px;
+    background-color: #EDEDED;
+}
+.client-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.client-card span{
+    font-size: 14px;
+    min-width: 40px;
+    max-width: 60px;
+    overflow: auto;
+    text-align: center;
+}
+.client-card img {
+    width: 30px;
+    height: 30px;
+}
+.client-card svg {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.confirmed{
+    display: none;
+}
