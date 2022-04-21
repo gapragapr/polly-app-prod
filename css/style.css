@@ -170,9 +170,10 @@ textarea{
     margin-top: 0;
 }
 .client-comment p{
-    min-height: 70px;
+    height: 70px;
     padding: 10px;
     background-color: #EDEDED;
+    overflow: auto
 }
 .client-buttons{
     width: 100%;
